@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background container with rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner subtle border -->
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.25" />
+
+  <!-- Bus Group with Drop Shadow -->
+  <g filter="url(#shadow)" transform="translate(106, 96)">
+    <!-- Main Bus Body -->
+    <rect x="0" y="30" width="300" height="210" rx="36" fill="url(#busGrad)" />
+
+    <!-- Windshield / Top Window Panel -->
+    <rect x="22" y="52" width="256" height="64" rx="14" fill="#0f172a" opacity="0.9" />
+    <!-- Windshield glare/reflection -->
+    <path d="M 32 58 L 120 58 L 90 110 L 32 110 Z" fill="#ffffff" opacity="0.15" />
+
+    <!-- Front Destination Sign / Marquee -->
+    <rect x="70" y="36" width="160" height="12" rx="4" fill="#f59e0b" />
+
+    <!-- Headlights -->
+    <circle cx="36" cy="180" r="14" fill="#38bdf8" />
+    <circle cx="36" cy="180" r="8" fill="#ffffff" />
+    <circle cx="264" cy="180" r="14" fill="#38bdf8" />
+    <circle cx="264" cy="180" r="8" fill="#ffffff" />
+
+    <!-- Front Grille -->
+    <rect x="80" y="165" width="140" height="30" rx="8" fill="#1e293b" />
+    <line x1="95" y1="175" x2="205" y2="175" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="95" y1="185" x2="205" y2="185" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- CU Emblem on Grille -->
+    <rect x="130" y="170" width="40" height="20" rx="4" fill="#dc2626" />
+    <text x="150" y="184" fill="#ffffff" font-family="Arial, sans-serif" font-weight="900" font-size="11" text-anchor="middle">CU</text>
+
+    <!-- Wheels -->
+    <!-- Left Wheel -->
+    <g transform="translate(40, 230)">
+      <rect x="-8" y="0" width="46" height="32" rx="8" fill="#0f172a" />
+      <circle cx="15" cy="20" r="14" fill="#334155" />
+      <circle cx="15" cy="20" r="6" fill="#94a3b8" />
+    </g>
+    <!-- Right Wheel -->
+    <g transform="translate(225, 230)">
+      <rect x="-8" y="0" width="46" height="32" rx="8" fill="#0f172a" />
+      <circle cx="15" cy="20" r="14" fill="#334155" />
+      <circle cx="15" cy="20" r="6" fill="#94a3b8" />
+    </g>
+  </g>
+
+  <!-- Typography at Bottom -->
+  <text x="256" y="415" fill="#ffffff" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="34" letter-spacing="3" text-anchor="middle">
+    CU BUS
+  </text>
+  <text x="256" y="450" fill="#38bdf8" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="700" font-size="16" letter-spacing="5" text-anchor="middle">
+    CHANDIGARH UNIVERSITY
+  </text>
+</svg>

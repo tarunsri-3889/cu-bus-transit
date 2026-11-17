@@ -1,0 +1,6 @@
+{
+  "name": "CU BUS Transit",
+  "description": "Chandigarh University transit tracking and fleet management portal for students, drivers, and transport administrators.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

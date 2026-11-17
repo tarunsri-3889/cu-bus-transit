@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CU BUS Transit</string>
+    <string name="title_activity_main">CU BUS Transit</string>
+    <string name="package_name">edu.cuchd.cubustransit</string>
+    <string name="custom_url_scheme">edu.cuchd.cubustransit</string>
+</resources>
